@@ -1,0 +1,33 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"github_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://google.com"
+				}
+			},
+			"preview_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://google.com"
+				}
+			},
+			"github_label": {
+				"__TYPE__": "FieldContent",
+				"value": "bad",
+				"type": "Text"
+			},
+			"preview_label": {
+				"__TYPE__": "FieldContent",
+				"value": "feathers",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

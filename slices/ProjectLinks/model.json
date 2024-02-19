@@ -1,0 +1,49 @@
+{
+  "id": "project_links",
+  "type": "SharedSlice",
+  "name": "ProjectLinks",
+  "description": "ProjectLinks",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "github_label": {
+          "type": "Text",
+          "config": {
+            "label": "Github Label",
+            "placeholder": ""
+          }
+        },
+        "github_link": {
+          "type": "Link",
+          "config": {
+            "label": "Github Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "preview_label": {
+          "type": "Text",
+          "config": {
+            "label": "Preview Label",
+            "placeholder": ""
+          }
+        },
+        "preview_link": {
+          "type": "Link",
+          "config": {
+            "label": "Preview Link",
+            "placeholder": "",
+            "select": null
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
