@@ -30,8 +30,6 @@ export default function ContentBody(
         }
     }
 
-    console.log(page.data.slices.filter(slice => slice.id !== "project_links"))
-
     return (
         <Bounded as="article">
             <div className="rounded-2xl border-2 border-slate-800 overflow-hidden relative">

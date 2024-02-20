@@ -12,11 +12,12 @@ export type ImageBlockProps = SliceComponentProps<Content.ImageBlockSlice>;
  */
 const ImageBlock = ({ slice }: ImageBlockProps): JSX.Element => {
   return (
-    <PrismicNextImage
-      field={slice.primary.image}
-      imgixParams={{w: 600, exp: -10}}
-      className="max-w-prose rounded-sm"
-    />
+    <div className="w-full max-w-prose object-contain">
+      <PrismicNextImage
+        field={slice.primary.image}
+        imgixParams={{w: 600, exp: -10}}
+      />
+    </div>
   );
 };
 
