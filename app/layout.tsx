@@ -6,6 +6,7 @@ import Footer from "@/components/footer";
 import clsx from "clsx";
 import { createClient, repositoryName } from "@/prismicio";
 import { PrismicPreview } from "@prismicio/next";
+import { asImageSrc } from "@prismicio/client";
 
 const urbanist = Urbanist({ subsets: ["latin"] });
 
@@ -18,11 +19,13 @@ export async function generateMetadata(): Promise<Metadata> {
     description: settings.data.meta_description,
   };
 }
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en" className="bg-slate-900 text-slate-100">
       <body className={clsx(urbanist.className, "relative min-h-screen")}>
